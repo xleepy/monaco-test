@@ -16,7 +16,8 @@ module.exports = {
       new TerserPlugin({
         terserOptions: {
           format: {
-            comments: /^\**!|@preserve|@license|license|@cc_on|Copyright|License/i
+            comments: /^\**!|@preserve|@license|license|@cc_on|Copyright|License/i,
+            wrap_iife: true
           }
         }
       })
